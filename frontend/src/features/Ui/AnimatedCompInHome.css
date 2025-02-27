@@ -1,0 +1,26 @@
+
+
+  @keyframes floatInfinite {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-60px); 
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-l1 {
+    animation: floatInfinite 10s forwards infinite; 
+  }
+  
+  .animate-l2 {
+    animation: floatInfinite 10s ease-in-out infinite; 
+  }
+  
+  .animate-l3 {
+    animation: floatInfinite 10s ease-in infinite; 
+  }
+  

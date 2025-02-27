@@ -1,0 +1,39 @@
+.light-nav-shadow {
+  border-bottom: solid #111827 1px;
+}
+.dark-nav-shadow {
+  border-bottom: solid rgb(247, 239, 239) 1px;
+}
+
+.logo {
+  font-family: "Luckiest Guy", cursive;
+  font-weight: bold;
+}
+
+.after::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -2px;
+  width: 0;
+  height: 1px;
+  background: #15636a;
+  z-index: -1;
+  transition-duration: 1s;
+}
+.after:hover::after {
+  width: 100%;
+}
+
+.notification::before{
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: -8px;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  z-index: 1;
+  animation: pulse 1s infinite;
+}

@@ -1,0 +1,48 @@
+/* Bounce animation for the button */
+.bounce {
+  animation: bounce 0.5s infinite alternate !important; /* Ensure it takes precedence */
+  display: inline-block; /* Ensure the button can translate */
+  position: relative; /* Make sure it can move within the flexbox */
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(
+      -10px
+    ); /* Adjust this value for higher/lower bounce */
+  }
+}
+
+/* Other existing styles remain unchanged */
+
+/* Rotating SVG */
+.rotating-svg {
+  animation: rotate 8s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(7deg);
+  }
+  50% {
+    transform: rotate(-7deg);
+  }
+  100% {
+    transform: rotate(7deg);
+  }
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
